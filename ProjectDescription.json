@@ -1,0 +1,147 @@
+{
+  "ProjectName": "eight",
+  "DLSVersion_LastSaved": "2.1.6",
+  "DLSVersion_EarliestCompatible": "2.0.0",
+  "CreationTime": "2025-12-09T11:22:06.981+01:00",
+  "LastSaveTime": "2025-12-12T16:17:36.438+01:00",
+  "Prefs_MainPinNamesDisplayMode": 1,
+  "Prefs_ChipPinNamesDisplayMode": 1,
+  "Prefs_GridDisplayMode": 1,
+  "Prefs_Snapping": 2,
+  "Prefs_StraightWires": 0,
+  "Prefs_SimPaused": true,
+  "Prefs_SimTargetStepsPerSecond": 250,
+  "Prefs_SimStepsPerClockTick": 250,
+  "AllCustomChipNames":[
+    "NOT",
+    "AND",
+    "OR",
+    "XOR",
+    "NOR",
+    "EQL",
+    "Full Adder",
+    "I8",
+    "MUX",
+    "MUX x4",
+    "I4",
+    "MATH-8",
+    "AND-8",
+    "ALU-8",
+    "MUX x8-8",
+    "Decoder-4",
+    "OR-4-1",
+    "NOR-4-1",
+    "MUX x8",
+    "OR-2-4",
+    "MUX x16-8",
+    "XOR-8",
+    "OR-8",
+    "EQL-8",
+    "NOT-8",
+    "MAIN",
+    "D-Flip-Flop",
+    "Reg-4BIT",
+    "Reg-8BIT",
+    "Reg-16BIT",
+    "Display-8BIT",
+    "NOR-7-1",
+    "ConditionalADD3",
+    "Dubble-Dabble-8",
+    "4-Bit to 7-seg",
+    "N1",
+    "Rev-MUX-2-1",
+    "Rev-MUX-2-8",
+    "Rev-MUX-8-8",
+    "N4",
+    "N8",
+    "Rev-MUX-4-8",
+    "Display-8",
+    "JK-Flip-Flop",
+    "D-Flip-Flop-Q2",
+    "T-Flip-Flop",
+    "2BIT Counter",
+    "8BIT Counter",
+    "Decoder-2",
+    "AND-4",
+    "4BIT Counter",
+    "Conv-8"
+  ],
+  "StarredList":[
+    {
+      "Name":"MAIN",
+      "IsCollection":false
+    },
+    {
+      "Name":"IN/OUT",
+      "IsCollection":true
+    },
+    {
+      "Name":"MERGE/SPLIT",
+      "IsCollection":true
+    },
+    {
+      "Name":"Gates",
+      "IsCollection":true
+    },
+    {
+      "Name":"Logic Components",
+      "IsCollection":true
+    },
+    {
+      "Name":"CPU parts",
+      "IsCollection":true
+    }
+  ],
+  "ChipCollections":[
+    {
+      "Chips":["IN-1","IN-4","IN-8","OUT-1","OUT-4","OUT-8"],
+      "IsToggledOpen":false,
+      "Name":"IN/OUT"
+    },
+    {
+      "Chips":["1-4BIT","4-8BIT","4-1BIT","I4","1-8BIT","8-4BIT","8-1BIT","Conv-8","I8","N1","N4","N8"],
+      "IsToggledOpen":true,
+      "Name":"MERGE/SPLIT"
+    },
+    {
+      "Chips":["BUS-1","BUS-4","BUS-8"],
+      "IsToggledOpen":true,
+      "Name":"BUS"
+    },
+    {
+      "Chips":["7-SEGMENT","DOT DISPLAY","RGB DISPLAY","LED","Display-8"],
+      "IsToggledOpen":true,
+      "Name":"DISPLAY"
+    },
+    {
+      "Chips":["ROM 256×16"],
+      "IsToggledOpen":false,
+      "Name":"MEMORY"
+    },
+    {
+      "Chips":["AND","AND-4","AND-8","NAND","OR","OR-4-1","OR-2-4","OR-8","NOR","NOR-4-1","NOR-7-1","XOR","XOR-8","EQL","EQL-8","NOT","NOT-8"],
+      "IsToggledOpen":true,
+      "Name":"Gates"
+    },
+    {
+      "Chips":["Decoder-2","Decoder-4","3-STATE BUFFER","MUX","MUX x4","MUX x8","MUX x8-8","MUX x16-8","Rev-MUX-2-1","Rev-MUX-2-8","Rev-MUX-4-8","Rev-MUX-8-8","T-Flip-Flop","D-Flip-Flop","D-Flip-Flop-Q2","JK-Flip-Flop","Dubble-Dabble-8"],
+      "IsToggledOpen":true,
+      "Name":"Logic Components"
+    },
+    {
+      "Chips":["Full Adder","MATH-8"],
+      "IsToggledOpen":true,
+      "Name":"ALU parts"
+    },
+    {
+      "Chips":["ALU-8","Reg-4BIT","Reg-8BIT","Reg-16BIT","Display-8BIT","2BIT Counter","4BIT Counter","8BIT Counter"],
+      "IsToggledOpen":true,
+      "Name":"CPU parts"
+    },
+    {
+      "Chips":["BUZZER","CLOCK","PULSE","KEY","MAIN","ConditionalADD3","4-Bit to 7-seg"],
+      "IsToggledOpen":true,
+      "Name":"OTHER"
+    }
+  ]
+}

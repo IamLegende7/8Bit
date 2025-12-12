@@ -1,0 +1,60 @@
+{
+  "DLSVersion": "2.1.6",
+  "Name": "N1",
+  "NameLocation": 2,
+  "ChipType": 0,
+  "Size": {
+    "x": 0.425,
+    "y": 0.375
+  },
+  "Colour": {
+    "r": 0.149019614,
+    "g": 0.149019614,
+    "b": 0.149019614,
+    "a": 1
+  },
+  "InputPins":[
+    {
+      "Name":"IN",
+      "ID":1118980649,
+      "Position":{
+        "x":14.625,
+        "y":5.9375
+      },
+      "BitCount":1,
+      "Colour":0,
+      "ValueDisplayMode":0
+    }
+  ],
+  "OutputPins":[
+    {
+      "Name":"OUT",
+      "ID":124714102,
+      "Position":{
+        "x":16.5,
+        "y":5.9375
+      },
+      "BitCount":1,
+      "Colour":0,
+      "ValueDisplayMode":0
+    }
+  ],
+  "SubChips":[],
+  "Wires":[
+    {
+      "SourcePinAddress":{
+        "PinID":0,
+        "PinOwnerID":1118980649
+      },
+      "TargetPinAddress":{
+        "PinID":0,
+        "PinOwnerID":124714102
+      },
+      "ConnectionType":0,
+      "ConnectedWireIndex":-1,
+      "ConnectedWireSegmentIndex":-1,
+      "Points":[{"x":0.0,"y":0.0},{"x":0.0,"y":0.0}]
+    }
+  ],
+  "Displays":[]
+}
