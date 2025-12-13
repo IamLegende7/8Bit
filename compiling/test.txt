@@ -1,18 +1,33 @@
-11 0000 00010 00011
-1000000001000011
+00 -- Program / Sys Commands
+############################
 
-1 -> Read/Write
-
-0000 | put <n> into r1
-1000 | cp <rA> <rB>
-
-0100 | load_data  <address> r1
-1100 | write_data r1 <address>
-
-0010 | load_ram  <address> r1
-1010 | write_ram r1 <address>
+0001 | JMP <n>                  # Jumps to the <n>th line in the Program if r1 = 0
 
 
+01 -- Data Transfer & Management
+################################
+
+0000 | PUT <n> r1
+1000 | CPY <rA> <rB>
+
+0100 | LOD <address> r1
+1100 | WRD r1 <address>
+
+0010 | LOR <address> r1
+1010 | WRR r1 <address>
+
+10 -- ALU
+#########
+
+0000 | ADD <rA> <rB>
+0001 | SUB <rA> <rB>
+0010 | INC <rA>
+0011 | DEC <rA>
+
+0100 | AND <rA> <rB>
+0101 | ORR <rA> <rB>
+0110 | XOR <rA> <rB>
+0111 | NOT <rA> 
 
 Ticks:
 

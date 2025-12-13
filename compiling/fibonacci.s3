@@ -1,0 +1,31 @@
+## Vars:
+# max | r7 -> the nth Fibonacci
+# i   | r6 -> loop var
+# a   | r2
+# b   | r3
+
+# Calculating the 5th fibonatcci number
+PUT 5
+CPY 1 7
+
+# 1st Value
+PUT 2
+CPY 1 2
+
+# 2nd Value
+PUT 1
+CPY 1 3
+
+# Setting i = 0
+CPY 0 6
+
+## for i in r7 ##
+XOR 6 7
+JMP [+8]
+  ADD 2 3
+  CPY 2 3
+  CPY 1 2
+  INC 6
+  CPY 1 6
+CPY 0 1
+JMP [-8]

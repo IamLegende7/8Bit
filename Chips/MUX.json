@@ -4,7 +4,7 @@
   "NameLocation": 0,
   "ChipType": 0,
   "Size": {
-    "x": 1.775,
+    "x": 0.575,
     "y": 0.75
   },
   "Colour": {
@@ -221,5 +221,5 @@
       "Points":[{"x":-3.0,"y":0.1875},{"x":-3.0,"y":-0.5},{"x":0.0,"y":0.0}]
     }
   ],
-  "Displays": null
+  "Displays":[]
 }

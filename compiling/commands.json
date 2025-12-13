@@ -1,0 +1,90 @@
+{
+    "00 -- Programm CMDs": "",
+    "HLT": {
+        "module": "00",
+        "cmd": "0000",
+        "args": []
+    },
+    "JMP": {
+        "module": "00",
+        "cmd": "0001",
+        "args": ["10"]
+    },
+
+    "01 -- Data Transfer & Management": "",
+    "PUT": {
+        "module": "01",
+        "cmd": "0000",
+        "args": ["10"]
+    },
+    "CPY": {
+        "module": "01",
+        "cmd": "1000",
+        "args": ["5", "5"]
+    },
+
+    "LOD": {
+        "module": "01",
+        "cmd": "0100",
+        "args": ["10"]
+    },
+    "WRD": {
+        "module": "01",
+        "cmd": "1100",
+        "args": ["10"]
+    },
+
+    "LOR": {
+        "module": "01",
+        "cmd": "0010",
+        "args": ["10"]
+    },
+    "WRR": {
+        "module": "01",
+        "cmd": "1010",
+        "args": ["10"]
+    },
+
+    "10 -- ALU": "",
+    "ADD": {
+        "module": "10",
+        "cmd": "0000",
+        "args": ["5", "5"]
+    },
+    "SUB": {
+        "module": "10",
+        "cmd": "0001",
+        "args": ["5", "5"]
+    },
+    "INC": {
+        "module": "10",
+        "cmd": "0010",
+        "args": ["5"]
+    },
+    "DEC": {
+        "module": "10",
+        "cmd": "0011",
+        "args": ["5"]
+    },
+
+    "AND": {
+        "module": "10",
+        "cmd": "0100",
+        "args": ["5", "5"]
+    },
+    "ORR": {
+        "module": "10",
+        "cmd": "0101",
+        "args": ["5", "5"]
+    },
+    "XOR": {
+        "module": "10",
+        "cmd": "0110",
+        "args": ["5", "5"]
+    },
+    "NOT": {
+        "module": "10",
+        "cmd": "0111",
+        "args": ["5"]
+    }
+}
