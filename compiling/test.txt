@@ -1,0 +1,22 @@
+11 0000 00010 00011
+1000000001000011
+
+1 -> Read/Write
+
+0000 | put <n> into r1
+1000 | cp <rA> <rB>
+
+0100 | load_data  <address> r1
+1100 | write_data r1 <address>
+
+0010 | load_ram  <address> r1
+1010 | write_ram r1 <address>
+
+
+
+Ticks:
+
+0 -> load instruction; cleanup
+1 -> [load value 1]
+2 -> [load value 2]
+3 -> [save value]; next instruction

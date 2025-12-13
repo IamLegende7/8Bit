@@ -1,0 +1,9 @@
+PUT 2
+CPY 1 2
+
+PUT 1
+CPY 1 3
+
+ADD 2 3
+CPY 2 3
+CPY 1 2
