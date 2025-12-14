@@ -1,0 +1,9 @@
+PUT 5
+CPY 1 7
+
+# PUT 5
+CPY 1 6
+
+XOR 6 7
+
+JMP 0

@@ -31,7 +31,8 @@
 
 Ticks:
 
-0 -> load instruction; cleanup
+0 -> cleanup
+0.5 -> load instruction
 1 -> [load value 1]
 2 -> [load value 2]
 3 -> [save value]; next instruction
