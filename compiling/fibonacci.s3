@@ -22,13 +22,11 @@ CPY 0 6
 ## for i in r7 ##
 HLT
 XOR 6 7
-JMP [+9]
-HLT
+JMP [+8]
   ADD 2 3
   CPY 2 3
   CPY 1 2
   INC 6
   CPY 1 6
-HLT
 CPY 0 1
-JMP [-10]
+JMP [-8]
