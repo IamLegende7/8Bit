@@ -41,6 +41,18 @@ Solltet ihr dieser Erklärung nicht folgen können, mach ein [Issue](https://git
 ### Schreiben von S3BPAL Programmen für eight
 ---
 
+**Syntax Highlighting**
+
+>**ACHTUNG!** Ihr solltet *niemals* einfach so eine VSCode Extention installieren! **Sie sind einfach nur Programme, die auf eurem Computer laufen!** (Das gilt übrigens auch für Extentions auf dem VSCode Marketplace).  
+>In diesem Fall kennt ihr ja aber den Autor persönlich: Ihr könnt also selbst einschätzen ob Ich euch einen Virus andrehen würde.
+
+Solltet ihr VSCode benutzen, so könnt ihr (in VSCode) auf die datei `compiling/s3bpal-lang-0.0.1.vsix` Rechts-Clicken und auf `Install Extention VSIX` drücken. Dies sollte eine, von Mir selbst erstellte VSCode Extention, installieren.  
+Diese sorgt für Syntax Highlighting für S3BPAL (Also dass der Code so schön bunt ist).
+
+Erwartet bloß bitte nicht zu viel; sie wurde in so ca. 1h (und ohne vorheriger Erfahrung) zusammengeworfen.
+
+**Beispiele**
+
 Unter [compiling](https://github.com/IamLegende7/8Bit/tree/main/compiling) solltet ihr einige Assembly Datein (1. S3BPAL assembly nicht richtige Assembly; 2. die Datein, die mit .s3 enden) und ihre compilierten Gegenstücke (die Datein, die mit .pal enden) finden.  
 Diese könnt ihr als Beispiele nutzen.
 
