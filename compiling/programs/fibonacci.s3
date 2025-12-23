@@ -5,7 +5,7 @@
 # b   | r3
 
 # Calculating the 5th fibonatcci number
-PUT 5
+PUT 5 # +1
 CPY 1 7
 
 # 1st Value
@@ -21,12 +21,19 @@ CPY 0 6
 
 ## for i in r7 ##
 HLT
+# while r6 != r7:
 XOR 6 7
 JMP [+8]
+
+  # r1 = r2 + r3
   ADD 2 3
+  # r3 = r2
   CPY 2 3
+  # r2 = r1
   CPY 1 2
+
+  # r6 = r6 + 1
   INC 6
   CPY 1 6
-CPY 0 1
+CPY 0 1 # r1 = 0
 JMP [-8]
