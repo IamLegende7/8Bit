@@ -1,9 +1,27 @@
+# Note: all commands that are commented out aren't implemented in `eight` (yet)
+
+xx -- EXTRA
+###########
+# Note: all these cammands are for the compiler only
+
+# xxxx | DEF <name>               # Defines a new function with the name <name>. The name can be any string without spaces, as this is only for the compiler
+# xxxx | END                      # Stops defining a function
+# Note for funtions:
+# funtions access registers all the same as the rest of the program. This can be abused to pass in values.
+
+# xxxx | CAL <name>              # Calls and executes the function with the name `name`.
+
+xxxx | SET <Address> <value>     # Sets the value at <Address> to <value> in the ROM (this will be exceuted on compiling and will be baked into the .pal file 'cause ROM and so forth)
+
+
 00 -- Program / Sys Commands
 ############################
 
 0000 | HLT                      # Just waits a clock cycle doing nothing
 0001 | JMP <n>                  # Jumps to the <n>th line in the Program if r1 = 00000000
 
+# 1000 | PRO <n>                  # Defines a new program with the id n (the id is used mainly for debugging, so not that important)
+# 1100 | STP <n>                  # Ends the currently running program. n should match the id of the `PRO` header
 
 01 -- Data Transfer & Management
 ################################
@@ -11,11 +29,12 @@
 0000 | PUT <n>                  # Puts the numeric constant n into r1
 1000 | CPY <rA> <rB>            # Copys the value in rA into rB
 
-0100 | LOD <rAddress>           # Loads the value at the address stored in rAddress from the Data storage into r1
-1100 | WRD <rAddress>           # Writes r1 at the address stored in rAddress in the Data storage
+# 0100 | LOD <rAddress>           # Loads the value at the address stored in rAddress from the Data storage into r1
+# 1100 | WRD <rAddress>           # Writes r1 at the address stored in rAddress in the Data storage
 
-0010 | LOR <rAddress>           # Loads the value at the address stored in rAddress from the RAM into r1
-1010 | WRR <rAddress>           # Writes r1 at the address stored in rAddress in the RAM
+# Note: Currently the ROM attached to `eight` acts as the Data storage, but is referred to as RAM by the Programs, to make adding actual RAM later easier.
+0010 | LOR <Address>           # Loads the value at the address stored in `Address` from the RAM into r1        # TODO: implement a system with Registers instead of set values
+# 1010 | WRR <rAddress>           # Writes r1 at the address stored in rAddress in the RAM
 
 10 -- ALU
 #########
@@ -29,3 +48,13 @@
 0101 | ORR <rA> <rB>            # Bitwise OR  of rA and rB to r1
 0110 | XOR <rA> <rB>            # Bitwise XOR of rA and rB to r1
 0111 | NOT <rA>                 # Bitwise NOT of rA to r1
+
+1000 | SFT <rA>                 # Bitwise shift of rA by 1  and into r1
+1001 | SFD <rA>                 # Bitwise shift of rA by -1 and into r1
+
+11 -- I/O
+##########
+
+# 0000 | DCY <rA> <rD>            # Copys the value in rA to the given display register rD
+
+# 1000 | DSP <rX> <rY>            # Writes the colour value in r1 to P( rX | rY ) on the attached display.

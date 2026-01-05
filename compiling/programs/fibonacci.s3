@@ -5,7 +5,8 @@
 # b   | r3
 
 # Calculating the 5th fibonatcci number
-PUT 5 # +1
+PUT 5
+DEC 1
 CPY 1 7
 
 # 1st Value

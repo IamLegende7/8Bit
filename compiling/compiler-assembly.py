@@ -23,10 +23,30 @@ def main():
         quit()
 
     ## Compiling source code
+    compiled_lines = []
     output_path = str(Path(source_path).stem) + ".pal"
-    with open(output_path, 'w') as output:
-        line_num = 0
-        for command in source_code:
+
+    line_num = 1
+    for command in source_code:
+        if command[0] == "SET":
+            address_line = int(command[1])
+            compiled_value = format(int(command[2]), '016b').replace(' ', '')
+
+            print(f'[L\033[1mx\033[0m] \033[1;32mSET\033[0m')
+            print(f'   ┣━ Module is: \033[1;35mxx\033[0m')
+            print(f'   ┗━ Wrote at {address_line}: \033[1;33m{compiled_value}\033[0m')
+
+            if len(compiled_lines)-1 < address_line-1:
+                for i in range((address_line-1)-(len(compiled_lines)-1)):
+                    compiled_lines.append("00 0000 00000 00000")
+                compiled_lines.append(compiled_value)
+            elif len(compiled_lines)-1 == address_line-1:
+                compiled_lines.append(compiled_value)
+            elif len(compiled_lines)-1 > address_line-1:
+                compiled_lines[address_line] = compiled_value
+
+        else:
+
 
             # Command as String
             command_str = command[0]
@@ -69,10 +89,22 @@ def main():
             
             # Write
             print(f'   ┗━ Result: \033[1;33m{compiled_line}\033[0m')
-            output.write(compiled_line + '\n')
-            line_num += 1
-            
 
+            if len(compiled_lines)-1 < line_num-1:
+                for i in range((line_num-1)-(len(compiled_lines)-1)):
+                    compiled_lines.append("00 0000 00000 00000")
+                compiled_lines.append(compiled_line)
+            elif len(compiled_lines)-1 == line_num-1:
+                compiled_lines.append(compiled_line)
+            elif len(compiled_lines)-1 > line_num-1:
+                compiled_lines[line_num] = compiled_line
+
+            line_num += 1
+
+    # Write to file
+    with open(output_path, 'w') as output:
+        for x in compiled_lines:
+            output.write(x+'\n')
 
 if __name__ == "__main__":
     main()
