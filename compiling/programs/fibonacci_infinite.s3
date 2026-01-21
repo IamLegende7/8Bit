@@ -1,0 +1,27 @@
+## Vars:
+# tmp | r6
+# a   | r2
+# b   | r3
+
+# inital Values
+PUT 1
+CPY 1 2
+CPY 0 3
+
+HLT
+# comparing
+SUB 0 2
+CPY 1 6
+PUT 128 # 1000000 mask
+AND 6 1
+JMP 15
+  # Calc fib
+  ADD 2 3
+  CPY 2 3
+  CPY 1 2
+CPY 0 1 # r1 = 0
+JMP 4
+
+HLT
+CPY 0 1
+JMP 0

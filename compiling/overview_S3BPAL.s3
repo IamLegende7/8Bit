@@ -33,7 +33,7 @@ xxxx | SET <Address> <value>     # Sets the value at <Address> to <value> in the
 # 1100 | WRD <rAddress>           # Writes r1 at the address stored in rAddress in the Data storage
 
 # Note: Currently the ROM attached to `eight` acts as the Data storage, but is referred to as RAM by the Programs, to make adding actual RAM later easier.
-0010 | LOR <Address>           # Loads the value at the address stored in `Address` from the RAM into r1        # TODO: implement a system with Registers instead of set values
+0010 | LOR <Address>            # Loads the value at the address stored in `Address` from the RAM into r1        # TODO: implement a system with Registers instead of set values
 # 1010 | WRR <rAddress>           # Writes r1 at the address stored in rAddress in the RAM
 
 10 -- ALU
